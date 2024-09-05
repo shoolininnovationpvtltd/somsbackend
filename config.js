@@ -1,2 +1,2 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/soms");
+mongoose.connect("mongodb+srv://developer:bDoi6siv1pyRpRZz@somsmaritime.qpkfy.mongodb.net/?retryWrites=true&w=majority&appName=somsmaritime");
