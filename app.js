@@ -456,6 +456,7 @@ app.delete('/course/delete/:_id', async (req, res) => {
 
 // vacancy api start
 const Vacancy = require('./instances/vacancy');
+
 // post vacancy
 app.post("/Vacancy/add", async (req, res) => {
     let data = new Vacancy(req.body);
