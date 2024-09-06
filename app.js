@@ -344,10 +344,11 @@ const path = require('path')
 const express = require('express');
 const app = express();
 const cors = require("cors")
+const dotenv = require('dotenv').config()
 require('./config');
 app.use(express.json());
 app.use(cors())
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 // multer---------
 const multer = require('multer')
