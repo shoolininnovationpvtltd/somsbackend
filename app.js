@@ -347,7 +347,8 @@ const cors = require("cors")
 require('./config');
 app.use(express.json());
 app.use(cors())
-const PORT = process.env.PORT || 5000
+const PORT = 5000
+
 // multer---------
 const multer = require('multer')
 
@@ -464,7 +465,7 @@ app.post("/Vacancy/add", async (req, res) => {
     let result = await data.save();
     res.send(result);
     console.log(req.body);
-    
+
 });
 // GET vacancy
 app.get("/vacancy/get", async (req, res) => {
