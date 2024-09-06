@@ -464,6 +464,7 @@ app.post("/Vacancy/add", async (req, res) => {
     let result = await data.save();
     res.send(result);
     console.log(req.body);
+    
 });
 // GET vacancy
 app.get("/vacancy/get", async (req, res) => {
