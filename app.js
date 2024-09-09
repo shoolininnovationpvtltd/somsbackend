@@ -763,6 +763,6 @@ app.put('/team/update/:_id', async (req, res) => {
 // })
 
 
-app.listen(PORT , function(){
+app.listen(PORT , '0.0.0.0' , function(){
     console.log("server is running");
 });
